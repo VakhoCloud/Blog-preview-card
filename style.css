@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* { 
+    padding: 0;
+}
+
+:root { 
+    --color-yellow: hsl(47, 88%, 63%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-grey: hsl(0, 0%, 50%);
+    --color-black: hsl(0, 0%, 7%);
+}
+
+body { 
+    margin: 0;
+}
+
+main { 
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-yellow);
+    color: var(--color-black);
+
+}
+
+.card { 
+    max-width: 327px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color-white);
+    border-radius: 20px;
+    border: 1px solid var(--color-black);
+    box-shadow: 10px 10px;
+    transition: box-shadow 0.25s;
+    gap: 24px
+}
+
+.inner-container { 
+    margin: 24px;
+}
+
+.card:hover { 
+    box-shadow: 15px 15px;
+}
+
+
+img { 
+    border-radius: 20px;
+    max-width: 100%;
+}
+
+h4 {
+    font-weight: 800;
+    font-size: 0.75rem;
+    padding: 8px 12px;
+    width: fit-content;
+    border-radius: 4px; 
+    background-color: var(--color-yellow);
+}
+
+p { 
+    font-size: 0.875rem;
+    color: var(--color-grey);
+}
+
+.pub { 
+    color: var(--color-black);
+    font-size: 0.75rem;
+}
+
+h1 { 
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 1.25rem;
+    transition: color 0.25s;
+}
+
+h1:hover { 
+    color: var(--color-yellow);
+}
+
+.profile { 
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.profile img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.profile p { 
+    font-weight: 800;
+    color: var(--color-black);
+}
+
+
+@media only screen and (min-width: 1440px) {
+    .card { 
+        max-width: 384px;
+    }
+}
