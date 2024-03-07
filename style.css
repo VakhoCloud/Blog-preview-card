@@ -53,7 +53,7 @@ main {
 
 
 img { 
-    border-radius: 20px;
+    border-radius: 10px;
     max-width: 100%;
 }
 
@@ -104,11 +104,18 @@ h1:hover {
 }
 
 
+
+
 @media only screen and (min-width: 1440px) {
     .card { 
         max-width: 384px;
     }
-    img {
-        border-radius: 10px;
+
+    .inner-container { 
+        padding: 12px;
+    }
+
+    .content { 
+        padding: 12px 0;
     }
 }
